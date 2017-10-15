@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_HomeWork_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HomeWork_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="main">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button x:Name="yesButton" Content="Да" HorizontalAlignment="Left" Margin="130,190,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="yesButton_Click"/>
+        <Button x:Name="noButton" Panel.ZIndex="1" Content="Нет" HorizontalAlignment="Left" Margin="300,190,0,0" VerticalAlignment="Top" Width="80" Height="30" MouseMove="noButton_MouseMove"/>
+        <Label x:Name="questionLabel" Content="Вас устраивает ваша зарплата?" HorizontalAlignment="Left" Margin="86,90,0,0" VerticalAlignment="Top" Height="43" Width="357" FontSize="24"/>
+        <Label x:Name="anwserLabel" Content="Мы и не сомневались" HorizontalAlignment="Left" Margin="181,247,0,0" VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</Window>
